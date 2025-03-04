@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+:root {
+    --confirm-btn-color: rgb(0, 0, 255);
+    --cancel-btn-color: #f44a30;
+    --btn-text-color: #ffffff;
+    --btn-height: 15px;
+    --btn-width: 40px;
+    --padding: 10px;
+}
+
+header > .nav {
+    height: 60px;
+    background-color: rgb(16, 16, 89);
+    color: rgb(240, 202, 33);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 7px;
+}
+
+body {
+    background-color: rgb(44, 44, 107);
+}
+
+.start-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-game-btn {
+    margin: 10px;
+    height: 30px;
+    width: 10vw;
+    background-color: var(--confirm-btn-color);
+    border: 1px solid var(--confirm-btn-color);
+}
+
+#player-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-field {
+    height: 27px;
+    width: 15vw;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+
+.btn {
+    height: 25px;
+    width: 7vw;
+    border-radius: 5px;
+    color: var(--btn-text-color);
+}
+
+.cancel {
+    background-color: var(--cancel-btn-color);
+    border: 1px solid var(--cancel-btn-color);
+}
+
+.submit {
+    background-color: var(--confirm-btn-color);
+    border: 1px solid var(--confirm-btn-color);
+}
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #ffffff;
+    background-color: rgb(16, 16, 89);
+    color: #ffffff;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap: 5px;
+}
+
+.result {
+    font-size: 2em;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.reset-game-btn {
+    height: 20px;
+    width: 10vw;
+    margin-top: 10px;
+    background-color: #f44a30;
+    border: 1px solid #f44a30;
+    color: #ffffff;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    border-radius: 5px;
+}
